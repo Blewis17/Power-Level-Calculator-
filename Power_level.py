@@ -1,24 +1,29 @@
-
-
-
-
-
 import random 
 
 
-# return(names)
-# def names(name):
 names = input(" What is your name? ")
 print(names)
 
-# def power(Level):
-#     Level = input(" What do you think you level is on this scale of 1 - 999999999?") 
-#     for x in range(1):
-#         print(random.randint(1, 999999999)) 
-# print(Level + )
+print("Hello, I'm going to read you your level now.")
+Level = input("What do you think your strength level is on this scale of 1 - 999999?") 
 
+Y = random.randint(1, 999999)
+print("Well, " + names + " your strength level is actually " + str(Y))
+T = random.randint(1, 999999)
+level = input("what do you think your spiritual level is on a scale of 1 - 999999")
+print("Well, " + names + " your spiritual level is actually " + str(T))
 
+total= input("Now that you know your power levels, do you want to know your overal power level?")
 
+def add (Y, T):
+    return Y + T
+    
+if total.lower() == "no":
+    print("Bye see you next time!")
+elif total.lower() == "yes":
+    print("Your total power level is " + str(add(Y,T)))
+    
+    
 
 
 
