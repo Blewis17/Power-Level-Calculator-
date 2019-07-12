@@ -20,22 +20,20 @@ T = random.randint(1, 1000000)
 level = input("what do you think your spiritual level is on a scale of 1 - 1000000?")
 print("Well, " + names + " your spiritual level is actually " + str(T))
 
-def add (Y, T):
-    return Y + T
-print(add(Y, T))
-# def tot_overall():
-total= input("Now that you know your power levels, do you want to know your overal power level?")
-
 # def add (Y, T):
 #     return Y + T
-    
+# print(add(Y, T))
+#def tot_overall():
+total= input("Now that you know your power levels, do you want to know your overal power level?")
+def add (Y, T):
+    return Y + T
 if total.lower() == "no":
     print("Bye see you next time!")
 elif total.lower() == "yes":
     print("Your total power level is " + str(add(Y,T)))
-else:
-    print("Sorry pick between yes or no")
-# print(total)  
+# else:
+    # print("Sorry pick between yes or no")
+print("Your true level is " + add(Y, T))  
 
 
 
